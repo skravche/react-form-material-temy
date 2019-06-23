@@ -22,43 +22,6 @@ const onSubmit = async values => {
 };
 
 class SelectAll extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      selectOptions: '',
-      itemsCountry: [],
-      itemsState: [],
-      itemsCity: [],
-      isLoaded: false,
-    };
-  }
-
-  componentDidMount() {
-    getCountry
-      .then(response => {
-        if (response.status !== 200) {
-          throw new Error('Failde to load data');
-        } else {
-          return response.json();
-        }
-      })
-      .then(json => {
-        this.setState({
-          isLoadedCountry: true,
-          itemsCountry: json,
-        });
-      })
-      .then(error => {
-        this.setState({ error });
-      });
-  }
-
-  state = { selectedOption: null };
-  handleChange = selectedOption => {
-    this.setState({ selectedOption });
-    // console.log('Option selected', selectedOption);
-  };
-
   render() {
     const { itemsCountry, itemsState, itemsCity } = this.state;
 
@@ -82,9 +45,8 @@ class SelectAll extends Component {
           onSubmit={onSubmit}
           render={({ handleSubmit, form, submitting, pristine, values }) => (
             <form onSubmit={handleSubmit}>
-              <div>Select List</div>
-              <div />
-              <p>SELECT ALL FORM:</p>
+              <div>!!!!!INPUTS!!!!!</div>
+
               <div>
                 <Field
                   name="coutry_id"

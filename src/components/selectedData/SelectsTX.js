@@ -28,8 +28,6 @@ class SelectsTX extends Component {
           onSubmit={onSubmit}
           render={({ handleSubmit, form, submitting, pristine, values }) => (
             <form onSubmit={handleSubmit}>
-              <div>Select List</div>
-              <div />
               <p>SELECT ALL FORM:</p>
               <div>
                 <SelectCity />
