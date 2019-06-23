@@ -1,0 +1,5 @@
+#select-country_id,
+#select-state_id,
+#select-city_id {
+  min-width: 260px;
+}

@@ -43,6 +43,7 @@ class SelectCity extends Component {
     const { itemsCity } = this.state;
     return (
       <Field
+        className="allfield"
         name="city_id"
         label="Select city"
         component={Select}

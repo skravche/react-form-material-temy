@@ -12,7 +12,7 @@ const TextFieldAdapter = ({ input, meta, ...rest }) => (
   <TextField
     {...input}
     {...rest}
-    onChange={(event, value) => input.onChange(value)}
+    onChange={value => input.onChange(value)}
     errorText={meta.touched ? meta.error : ''}
   />
 );
@@ -37,7 +37,7 @@ class InputsData extends Component {
         </div>
         <Form
           onSubmit={onSubmit}
-          render={({ handleSubmit, form, submitting, pristine, values }) => (
+          render={({ handleSubmit, form, submitting, values }) => (
             <form onSubmit={handleSubmit}>
               <div>
                 <Field
@@ -106,7 +106,7 @@ class InputsData extends Component {
                 <button
                   type="button"
                   onClick={form.reset}
-                  disabled={submitting || pristine}
+                  disabled={submitting}
                 >
                   Reset
                 </button>

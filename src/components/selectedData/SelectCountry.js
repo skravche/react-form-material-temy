@@ -39,6 +39,7 @@ class SelectCountry extends Component {
   handleChange = selectedOption => {
     this.setState({ selectedOption });
   };
+
   render() {
     const { itemsCountry } = this.state;
     return (
