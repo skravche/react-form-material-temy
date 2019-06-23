@@ -7,7 +7,6 @@ import { Form, Field } from 'react-final-form';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import TextField from 'material-ui/TextField';
-import Button from '@material-ui/core/Button';
 
 const TextFieldAdapter = ({ input, meta, ...rest }) => (
   <TextField
@@ -23,7 +22,7 @@ const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 const onSubmit = async values => {
   await sleep(300);
   window.alert(JSON.stringify(values, 0, 2));
-  // createUser(values);
+  createUser(values);
 };
 
 const required = value => (value ? undefined : 'Required');
