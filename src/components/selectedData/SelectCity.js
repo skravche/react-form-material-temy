@@ -50,7 +50,7 @@ class SelectCity extends Component {
       >
         {itemsCity.map(city => {
           return (
-            <MenuItem value={city.id} key={city.name}>
+            <MenuItem value={city.id} key={city.name} state_id={city.state_id}>
               {city.name}
             </MenuItem>
           );

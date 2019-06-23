@@ -50,7 +50,11 @@ class SelectCountry extends Component {
       >
         {itemsCountry.map(country => {
           return (
-            <MenuItem value={country.id} key={country.name}>
+            <MenuItem
+              value={country.id}
+              name={country.name}
+              hasc={country.hasc}
+            >
               {country.name}
             </MenuItem>
           );

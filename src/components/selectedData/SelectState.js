@@ -51,7 +51,11 @@ class SelectState extends Component {
       >
         {itemsState.map(states => {
           return (
-            <MenuItem value={states.id} key={states.name}>
+            <MenuItem
+              value={states.id}
+              key={states.name}
+              country_id={states.country_id}
+            >
               {states.name}
             </MenuItem>
           );

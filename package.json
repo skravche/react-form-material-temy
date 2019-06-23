@@ -8,9 +8,11 @@
     "final-form-material-ui": "^0.3.0",
     "json-server": "^0.15.0",
     "material-ui": "^0.20.2",
+    "material-ui-phone-number": "^2.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-final-form": "^6.3.0",
+    "react-material-ui-form-validator": "^2.0.9",
     "react-scripts": "3.0.1"
   },
   "scripts": {
