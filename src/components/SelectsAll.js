@@ -23,22 +23,7 @@ const onSubmit = async values => {
 
 class SelectAll extends Component {
   render() {
-    const { itemsCountry, itemsState, itemsCity } = this.state;
-
-    // user: {    "id": "1",
-    // "name": "John Smith",
-    //   "email": "john.smith@gmail.com",
-    //     "phone_number": "380681234567",
-    //       "address": null,
-    //         "about_me": null,
-    //           "country_id": "1",
-    //             "state_id": "12",
-    //               "city_id": "12",
-    //                 "createdAt": 1543783744211}
-    //country: id, hasc, name
-    //state: id, hasc, name, country_id
-    //cities: id, name, state_id
-
+    const { itemsCountry } = this.state;
     return (
       <div>
         <Form

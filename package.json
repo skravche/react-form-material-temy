@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.1.2",
+    "email-validator": "^2.0.4",
     "final-form": "^4.16.1",
     "final-form-material-ui": "^0.3.0",
     "json-server": "^0.15.0",

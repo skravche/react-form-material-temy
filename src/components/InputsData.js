@@ -7,6 +7,7 @@ import { Form, Field } from 'react-final-form';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import TextField from 'material-ui/TextField';
+import Button from '@material-ui/core/Button';
 
 const TextFieldAdapter = ({ input, meta, ...rest }) => (
   <TextField
@@ -24,9 +25,8 @@ const onSubmit = async values => {
   window.alert(JSON.stringify(values, 0, 2));
   // createUser(values);
 };
-const required = value => (value ? undefined : 'Required');
 
-// const InputsData = () => (
+const required = value => (value ? undefined : 'Required');
 
 class InputsData extends Component {
   render() {
@@ -94,8 +94,14 @@ class InputsData extends Component {
                   floatingLabelText="About Me:"
                 />
               </div>
+
               <div className="buttons">
-                <button type="submit" disabled={submitting}>
+                <button
+                  type="submit"
+                  disabled={submitting}
+                  variant="contained"
+                  color="primary"
+                >
                   Submit
                 </button>
                 <button
@@ -106,6 +112,7 @@ class InputsData extends Component {
                   Reset
                 </button>
               </div>
+
               <pre>{JSON.stringify(values, undefined, 2)}</pre>
             </form>
           )}
@@ -114,7 +121,4 @@ class InputsData extends Component {
     );
   }
 }
-
-// );
-
 export default InputsData;

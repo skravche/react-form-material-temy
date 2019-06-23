@@ -1,12 +1,12 @@
 import React from 'react';
 import InputsData from './components/InputsData';
-import UsersView from './components/selectedData/UsersData';
+import UsersViewTab from './components/UsersTab';
 
 function App() {
   return (
     <div className="App">
       <InputsData />
-      <UsersView />
+      <UsersViewTab />
     </div>
   );
 }
